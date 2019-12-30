@@ -74,5 +74,17 @@
 > 2. Console Tool 사용
 
 
+## Lucene Segment
+
+> 색인에 관련된segment
+> 1초 마다 하나씩 생성
+> 한 번 생성된 segment는 변경되지 않는다.
+>>
+>> 문서의 update는 없다. -> delete & insert 되어 진다.
+>> 검색 성능 저하를 방지하기 위해 segment merge를 한다.
+>> disk IO 작업
+>> segment 작업은 새벽에 작업된다. 새로운 세그먼트를 만들 때 오류를 방지하기 위해
+>> CPU, Memory가 충분하게 있어야 한다.
+
 
 
